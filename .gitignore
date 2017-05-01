@@ -1,1 +1,7 @@
 dist
+dist-*
+*.o
+*.hi
+*.chi
+.cabal-sandbox/
+.stack-work/
