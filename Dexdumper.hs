@@ -11,7 +11,7 @@ import Data.ByteString.Lazy.Builder (Builder)
 import qualified Data.Map as Map
 import Data.List
 import Data.Maybe
-import Data.Monoid
+import Data.Monoid()
 import Data.Word
 import System.Environment
 

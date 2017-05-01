@@ -4,7 +4,7 @@ module Dalvik.Parser
   , loadDex
   ) where
 
-import Control.Applicative
+import Control.Applicative()
 import Control.Monad
 import qualified Data.ByteString as BS
 import qualified Data.ByteString.Char8()

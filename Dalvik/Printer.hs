@@ -19,7 +19,7 @@ import qualified Data.ByteString.Lazy.Builder.ASCII as A
 import Data.ByteString.Lazy.Builder (Builder)
 import Data.Int
 import Data.List
-import Data.Monoid
+import Data.Monoid()
 import Data.Serialize.Get ( runGet )
 import Data.Serialize.Put ( runPut, putWord32le, putWord64le )
 import Data.Serialize.IEEE754 ( getFloat32le, getFloat64le )
@@ -32,8 +32,8 @@ import Dalvik.Types
 
 type Str = Builder
 
-instance IsString Builder where
-  fromString = B.string7
+--instance IsString Builder where
+--  fromString = B.string7
 
 (+++) :: (Monoid s) => s -> s -> s
 (+++) = mappend

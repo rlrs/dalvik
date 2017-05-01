@@ -4,7 +4,7 @@ module Dalvik.LEB128
   , getULEB128p1
   ) where
 
-import Control.Applicative
+import Control.Applicative()
 import Data.Bits
 import Data.Int
 import Data.Word
