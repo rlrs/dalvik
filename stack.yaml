@@ -23,7 +23,8 @@ user-message: ! 'Warning (added by new or init): Specified resolver could not sa
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-6.23
+resolver: lts-8.22
+ghc-build: tinfo6
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -48,8 +49,8 @@ packages:
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
 extra-deps:
-- floatshow-0.2.4
-- zip-conduit-0.2.2.2
+    #- floatshow-0.2.4
+    #- zip-conduit-0.2.2.2
 
 # Override default flag values for local packages and extra-deps
 flags: {}

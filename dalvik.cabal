@@ -21,8 +21,8 @@ Library
                     cereal,
                     conduit,
                     containers,
-                    floatshow,
-                    zip-conduit
+                    zip,
+                    path
 
     Hs-Source-Dirs: .
     Exposed-Modules: Dalvik.AccessFlags
@@ -31,13 +31,18 @@ Library
                      Dalvik.Instruction
                      Dalvik.LEB128
                      Dalvik.Parser
-                     Dalvik.Printer
+                     --Dalvik.Printer
                      Dalvik.Types
     Other-Modules:
     GHC-Options: -Wall -O2
     GHC-Prof-Options: -prof -fprof-auto -fprof-cafs
 
-Executable Dexdumper
-    Main-Is: Dexdumper.hs
-    GHC-Options: -Wall -O2
-    GHC-Prof-Options: -prof -fprof-auto -fprof-cafs
+--Executable Dexdumper
+--    Main-Is: Dexdumper.hs
+--    GHC-Options: -Wall -O2
+--    GHC-Prof-Options: -prof -fprof-auto -fprof-cafs
+
+--Executable Graph
+--    Main-Is: Graph.hs
+--    GHC-Options: -Wall -O3
+--    GHC-Prof-Options: -prof -fprof-auto -fprof-cafs
