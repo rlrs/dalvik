@@ -3,5 +3,8 @@ dist-*
 *.o
 *.hi
 *.chi
+*.iml
 .cabal-sandbox/
 .stack-work/
+.idea/
+.ideaHaskellLib/
